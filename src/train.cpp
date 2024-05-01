@@ -37,7 +37,7 @@ int Train::getLength() {
         }
         currentVan->light = false;
         res = vanCount;
-        while (vanCount >= 0) {
+        while (vanCount > 0) {
             countOp++;
             vanCount--;
             currentVan = currentVan->prev;
